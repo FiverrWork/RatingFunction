@@ -14,7 +14,6 @@ const star_no_5 = document.querySelector("#star5");
 function star1() {
   rating = 1;
   localStorage.setItem("rate", "star1");
-  localStorage.setItem("messageText", message.value);
   star_no_1.style.color = "#FFD700";
   star_no_2.style.color = "gray";
   star_no_3.style.color = "gray";
@@ -24,7 +23,6 @@ function star1() {
 function star2() {
   rating = 2;
   localStorage.setItem("rate", "star2");
-  localStorage.setItem("messageText", message.value);
   star_no_1.style.color = "#FFD700";
   star_no_2.style.color = "#FFD700";
   star_no_3.style.color = "gray";
@@ -34,7 +32,6 @@ function star2() {
 function star3() {
   rating = 3;
   localStorage.setItem("rate", "star3");
-  localStorage.setItem("messageText", message.value);
   star_no_1.style.color = "#FFD700";
   star_no_2.style.color = "#FFD700";
   star_no_3.style.color = "#FFD700";
@@ -44,7 +41,6 @@ function star3() {
 function star4() {
   rating = 4;
   localStorage.setItem("rate", "star4");
-  localStorage.setItem("messageText", message.value);
   star_no_1.style.color = "#FFD700";
   star_no_2.style.color = "#FFD700";
   star_no_3.style.color = "#FFD700";
@@ -54,7 +50,6 @@ function star4() {
 function star5() {
   rating = 5;
   localStorage.setItem("rate", "star5");
-  localStorage.setItem("messageText", message.value);
   star_no_1.style.color = "#FFD700";
   star_no_2.style.color = "#FFD700";
   star_no_3.style.color = "#FFD700";
@@ -86,15 +81,7 @@ function heart(e) {
 
 
 function noChoose() {
-  star_no_1.style.color = "gray";
-  star_no_2.style.color = "gray";
-  star_no_3.style.color = "gray";
-  star_no_4.style.color = "gray";
-  star_no_5.style.color = "gray";
-  message.value= ""
-  if(message.value){
-    localFunc()
-  }
+  localStorage.setItem("messageText", message.value);
 }
 
 localFunc()
